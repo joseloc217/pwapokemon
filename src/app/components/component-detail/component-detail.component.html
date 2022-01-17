@@ -1,0 +1,29 @@
+
+<mat-card class="card animate_bounce animate_fadeIn">
+    <div class="col md-4">
+        <a class="btn btn-danger" routerLink="/">Back</a>
+    </div>
+    <mat-card-header>
+      <img mat-card-avatar class="header-image rounded" src="{{list.sprites ? list.sprites.front_default : ''}}">
+      <mat-card-title>{{list.name}}</mat-card-title>
+      <mat-card-subtitle>Pokemon #{{list.id}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{list.sprites ? list.sprites.front_default : ''}}" alt="pokemon image">
+    <mat-card-content>
+    <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Detalle Pokemon
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+        <mat-chip-list>
+          <mat-chip color="primary">Type: {{list.types[0].type.name}}</mat-chip>
+          <mat-chip color="primary">Ability: {{list.abilities[0].ability.name}}</mat-chip>
+          <mat-chip color="primary">Height: {{list.height}}</mat-chip>
+          <mat-chip color="primary">Weight: {{list.weight}}</mat-chip>
+        </mat-chip-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card-content>
+</mat-card>
