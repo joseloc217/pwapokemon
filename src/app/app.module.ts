@@ -12,6 +12,7 @@ import { MaterialModule } from 'src/shared/material.module';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+	RouterModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserModule,
