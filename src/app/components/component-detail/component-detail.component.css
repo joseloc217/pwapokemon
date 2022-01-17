@@ -1,0 +1,61 @@
+
+.card {
+    max-width:350px;
+    max-height: 750px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #9956cf;
+}
+.card:hover {
+    cursor: pointer;
+    box-shadow: inset 2px 2px 4px 3px ;
+    color:white;
+  }
+
+.header-image {
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.mat-card-header{
+    background-color: #fcfcfc;
+    padding-top: 5px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.mat-card-header:hover {
+    cursor: pointer;
+    box-shadow: inset 1px 1px 0 2px ;
+    color:#1627c2;
+  }
+
+.mat-card-title{
+    text-transform: uppercase;
+    color: rgba(21, 112, 197, 0.699);
+    font-weight: bold;
+}
+
+.mat-card-subtitle{
+    color: #c257a2;
+}
+.mat-chip{
+    color:#3671bd;
+    background-color: white;
+}
+
+.mat-expansion-panel-header{
+    background-color:white;
+    color: rgba(13, 231, 140, 0.726);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.mat-expansion-panel-header:hover {
+    cursor: pointer;
+    box-shadow: inset 1px 1px 0 2px ;
+    color:#1627c2;
+  }
